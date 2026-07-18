@@ -23,3 +23,10 @@ FROM Customers
 UNION
 SELECT 'Supplier', ContactName, City, Country
 FROM Suppliers;
+
+
+//UNION ALL operator includes all rows from each statement, including any duplicates.
+SELECT Country FROM Customers
+UNION ALL
+SELECT Country FROM Suppliers
+ORDER BY Country;

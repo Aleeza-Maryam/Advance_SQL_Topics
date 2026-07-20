@@ -7,3 +7,16 @@ SELECT City , COUNT(Customer_ID) AS NoOfCustomer
 FROM customers
 GROUP BY City
 HAVING COUNT(Customer_ID)>2;
+
+
+
+SELECT COUNT(EmpID) AS TotalEmployees
+FROM Employees
+HAVING COUNT(EmpID) > 10;
+
+
+SELECT City , COUNT(Customer_ID) AS NoOfCustomer
+FROM customers
+GROUP BY City
+HAVING COUNT(Customer_ID)>2
+ORDER BY NoOfCustomer DESC;

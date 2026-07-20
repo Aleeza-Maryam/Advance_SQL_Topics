@@ -20,3 +20,12 @@ FROM customers
 GROUP BY City
 HAVING COUNT(Customer_ID)>2
 ORDER BY NoOfCustomer DESC;
+
+
+
+SELECT Employees.lastname , COUNT(Orders.OrderID) AS TotalOrders
+FROM Orders
+INNER JOIN Employees
+ON Orders.EmployeeID=Employee.EmployeeID
+GROUP BY lastname
+HAVING TotalOrders > 10;

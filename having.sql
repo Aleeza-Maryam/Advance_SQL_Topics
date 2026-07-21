@@ -22,7 +22,7 @@ HAVING COUNT(Customer_ID)>2
 ORDER BY NoOfCustomer DESC;
 
 
-
+//inner join sabse fast hai 
 SELECT Employees.lastname , COUNT(Orders.OrderID) AS TotalOrders
 FROM Orders
 INNER JOIN Employees

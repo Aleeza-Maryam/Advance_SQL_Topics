@@ -8,3 +8,10 @@ WHERE EXISTS(
     FROM PRODUCTS
     WHERE Products.SupplierID=Supplier.SupplierID AND Price < 10;
 )
+SELECT Supplier_Name
+FROM Suppliers
+WHERE EXISTS(
+    SELECT Product_Name
+    FROM PRODUCTS
+    WHERE Products.SupplierID=Supplier.SupplierID AND Price=22;
+)

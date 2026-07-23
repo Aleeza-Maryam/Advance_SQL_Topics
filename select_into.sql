@@ -12,7 +12,7 @@ SELECT Customer_name , Phone INTO new_table
 FROM CUSTOMERS
 WHERE Country='USA';
 
-//JOINS
+//JOINS in select into
 SELECT Customers.Customer_name , Orders.OrderDetails INTO new_table
 FROM Customers
 LEFT JOIN  Orders

@@ -5,3 +5,15 @@ CASE
  ELSE 'HIGH COST'
 END AS PriceCategory
 FROM Products;
+
+
+
+SELECT StudentName, Marks ,
+CASE 
+    WHEN Marks BETWEEN 90 AND 100 THEN "A+"
+    WHEN Marks BETWEEN 80 AND 90 THEN "A"
+    WHEN Marks BETWEEN 70 AND 80 THEN "B+"
+    WHEN Marks BETWEEN 60 AND 70 THEN "B"
+    ELSE 'Fail'
+END AS Grade
+FROM Students;

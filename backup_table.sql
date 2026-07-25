@@ -7,3 +7,8 @@ Sirf wahi data backup karta hai jo pichle Full Backup ke baad badla (change) hua
 BACKUP TABLE CUSTOMERS
 TO DISK ='C:\backups\myDB_backup.bak'
 WITH Differential;
+
+//restore database from backup
+
+RESTORE database customers
+FROM DISK='C:\backups\myDB_backup.bak'

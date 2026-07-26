@@ -17,3 +17,28 @@ CREATE TABLE Persons (
     City varchar(255),
     CONSTRAINT chk_PersonAge CHECK (Age >= 18 AND City = 'Karachi')
 );
+
+
+
+//to drop a constraint
+ALTER TABLE Persons
+DROP CHECK chk_PersonAge;
+
+
+
+
+//INDEX
+
+CREATE INDEX idx_lastname
+ON Persons(LastName);
+
+//On multiple columns
+
+CREATE INDEX idx_first_lastname
+ON Persons(FirstName,LastName);
+
+
+//DROP
+
+ALTER TABLE Persons
+DROP INDEX idx_first_lastname;

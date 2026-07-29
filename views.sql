@@ -20,3 +20,4 @@ FROM Customers
 WHERE Country = 'Brazil';
 
 DROP VIEW ViewName;
+DROP VIEW [Brazil Customers];
